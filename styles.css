@@ -11,7 +11,7 @@ h1 {
 .container {
   display: grid;
   /* height: 100%; */
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(300px, 1fr) 4fr;
 }
 
 .sidebar {
@@ -40,6 +40,10 @@ li {
   display: grid;
   grid-template-columns: 50px 50px;
   align-items: center;
+}
+
+li:hover {
+  cursor: pointer;
 }
 
 .main-content {
