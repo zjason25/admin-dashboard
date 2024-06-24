@@ -46,11 +46,57 @@ li:hover {
   cursor: pointer;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  align-self: center;
+}
+
+.search-bar {
+  background-color: rgb(199, 199, 199);
+  height: 30px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+.account {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-self: center;
+  justify-self: center;
+  /* gap: 10px; */
+}
+
+.profile-picture {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.notification,
+.user-name {
+  align-self: center;
+}
+
 .main-content {
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(199, 199, 199);
 }
 
 svg {
   height: 30px;
   fill: white;
+}
+
+svg.search-icon,
+svg.notification {
+  fill: black;
 }
