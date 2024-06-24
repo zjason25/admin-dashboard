@@ -33,7 +33,7 @@ body {
   padding: 15px;
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: #f0f9ff;
   display: grid;
   gap: 15px;
 }
@@ -107,6 +107,7 @@ li:hover {
   display: grid;
   grid-template-columns: 1fr 5fr;
   font-weight: bold;
+  align-items: center;
   padding-left: 20px;
 }
 
@@ -117,24 +118,49 @@ li:hover {
 }
 
 .name-display {
-  padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 20px
 }
 
 .user-name-greeting {
   font-size: 24px;
 }
 
-.main-content {
-  background-color: #e2e8f0;
-}
-
 svg {
   height: 30px;
-  fill: white;
+  fill: #f0f9ff;
 }
 
 svg.search-icon,
 svg.notification {
   fill: black;
+}
+
+.create {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  align-content: center;
+  justify-content: right;
+  padding-right: 50px;
+  gap: 50px;
+}
+
+.create .button {
+  background-color: #0ea5e9;
+  height: 40px;
+  width: 110px;
+  font-weight: 500;
+  color: #f0f9ff;
+  border-radius: 30px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #e2e8f0;
+}
+
+.main-content {
+  background-color: #e2e8f0;
 }
