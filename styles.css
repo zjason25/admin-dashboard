@@ -4,14 +4,27 @@ body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-h1 {
-  color: pink;
-}
-
 .container {
   display: grid;
-  /* height: 100%; */
   grid-template-columns: minmax(300px, 1fr) 4fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 80px 80px;
+  font-size: 70px;
+  align-items: center;
+}
+
+.dashboard-icon {
+  height: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+.sidebar .dashboard {
+  font-size: 24px;
 }
 
 .sidebar {
@@ -23,10 +36,6 @@ h1 {
   color: white;
   display: grid;
   gap: 15px;
-}
-
-.sidebar .dashboard {
-  font-size: 24px;
 }
 
 ul.navigation,
@@ -44,6 +53,7 @@ li {
 
 li:hover {
   cursor: pointer;
+  color: #e2e8f0;
 }
 
 .header {
@@ -54,22 +64,22 @@ li:hover {
 .search {
   display: grid;
   grid-template-columns: 50px 50px;
-  align-self: center;
+  padding-top: 40px;
+  padding-left: 50px;
 }
 
 .search-bar {
-  background-color: rgb(199, 199, 199);
+  background-color: #e2e8f0;
   height: 30px;
-  width: 500px;
+  width: 700px;
   border-radius: 15px;
 }
 
 .account {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  align-self: center;
   justify-self: center;
-  /* gap: 10px; */
+  padding-top: 20px;
 }
 
 .profile-picture {
@@ -84,11 +94,11 @@ li:hover {
 
 .notification,
 .user-name {
-  align-self: center;
+  padding-top: 15px;
 }
 
 .main-content {
-  background-color: rgb(199, 199, 199);
+  background-color: #e2e8f0;
 }
 
 svg {
