@@ -178,12 +178,33 @@ svg.notification {
   grid-row: 1 / 3;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 30px repeat(3, 1fr);
+  grid-template-rows: 50px repeat(3, 230px);
 }
 
 .project {
   background-color: #fafafa;
-  height: 175px;
+  height: 200px;
   width: 350px;
   border-radius: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+.project,
+.projects .heading {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.projects .heading {
+  font-weight: 500;
+}
+
+.project .text {
+  font-size: 14px;
+}
+
+.project .title {
+  font-weight: bold;
 }
